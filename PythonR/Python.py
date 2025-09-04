@@ -7,7 +7,7 @@ ro.r('install.packages("readxl", repos="https://cloud.r-project.org")')
 readxl = importr("readxl")
 
 # Caminho do arquivo
-arquivo = "C:/Ludmila/faculdade/inferencia_estatistica/diferenca salarial agro e ind.xlsx"
+arquivo = "C:\Ludmila\faculdade\ProgramacaoAnaliseDados\PythonR\diferenca salarial agro e ind.xlsx"
 
 # Ler planilha pelo R
 ro.r(f'dados <- readxl::read_excel("{arquivo}")')
@@ -15,15 +15,3 @@ ro.r(f'dados <- readxl::read_excel("{arquivo}")')
 # Calcular média por setor no R
 res = ro.r('aggregate(Rendimento ~ Setor, data = as.data.frame(dados), FUN = mean)')
 print(res)
-import pandas as pd
-
-# Criar um DataFrame de exemplo
-dados = pd.DataFrame({
-    'Setor': ['Agro', 'Indústria', 'Agro', 'Indústria', 'Agro', 'Indústria'],
-    'Rendimento': [2500, 3200, 2700, 3100, 2600, 3300]
-})
-
-# Calcular a média de rendimento por setor
-media_por_setor = dados.groupby('Setor')['Rendimento'].mean().reset_index()
-
-print(media_por_setor)
