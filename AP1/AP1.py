@@ -182,7 +182,7 @@ maiorROC = dfTecnologia[colunas].nlargest(1, 'roc')
 # usando a empresa Gerdau ("GGBR4") e o período 2025/2º trimestre (ano_tri = "20252T").
 # O retorno da API contém uma chave "balanco", que é uma lista com diversas contas do balanço.
 # Localize dentro dessa lista a conta cuja descrição é “Ativo Total” e "Lucro Liquido".
-# Calcule o Return on Assets que é dados pela formula: ROA = Lucro Liquido / Ativo Totais
+# Calcule o Return on Assets que é dados pela formula: ROA = Lucro Liquido / Ativo Totais.
 
 import requests
 token =  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU4OTcxNDc4LCJpYXQiOjE3NTYzNzk0NzgsImp0aSI6ImExOTA3MTk5ZTU2NDQ3OGVhNmI0NGJhNDViYzBlYzViIiwidXNlcl9pZCI6IjQ5In0.pZtn2sQhc-GKGZtjWeL6kcZy9RwrJQfKIMZkBak3MTc"
