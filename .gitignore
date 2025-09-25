@@ -115,6 +115,6 @@ celerybeat.pid
 .pdm-python
 .pdm-build/
 
-# Pixi
+# Pixi.
 #pixi.lock
 .pixi
